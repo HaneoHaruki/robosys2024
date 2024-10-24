@@ -1,11 +1,16 @@
 #!/usr/bin/python3
+# SPDX-FileCopyrightText: 2024 Haruki Haneo
+
 import sys
    
-ans = 0
-for line in sys.stdin:
+def tonum(s):
     try:
-        ans += int(line)
+        return int(s)
     except:
-        ans += float(line)
-     
-print(ans)
+        return float(s)
+
+    ans = 0
+    for line in sys.stdin:
+        ans += tonum(line)
+
+    print(ans)
