@@ -1,8 +1,21 @@
 #!/usr/bin/python3
+# SPDX-FileCopyrightText: 2024 Haruki Haneo
+
 import sys
    
 ans = 0
+
+
+
+
+
 for line in sys.stdin:
     line = line.rstrip()
+
+
+
+
+
+
      
 print(ans)
